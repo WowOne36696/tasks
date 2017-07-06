@@ -23,10 +23,10 @@ function Fibonacci(iterations) {
         summ = a + b;
 		a = b;
 		b = summ;
-		document.write((i+1) + ' итерация = ' + summ + ' /');
+		alert((i+1) + ' итерация = ' + summ + ' /');
     }
 }
-Fibonacci(100);
+Fibonacci(10);
 
 //Task 6
 function changeDirection(string) {
@@ -36,3 +36,15 @@ function changeDirection(string) {
   
   //Task 7
   
+  //Task 8
+  function factorial(n) {
+    var summ = 1, a = 1;
+	for (var i = 1; i <= n; i++){
+	summ *= i;
+    }
+alert(summ);
+}
+factorial(5);
+
+//Task9
+
