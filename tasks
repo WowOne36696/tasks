@@ -15,6 +15,13 @@ var string = "string",
 string.includes(substring);
 
 //Task3
+function splitString(str, maxlength) {
+	return (str.length > maxlength) ?
+		    str.slice(0, maxlength - 1) + '...' : str;
+		}
+	var str = prompt('Enter the sentence');
+	var maxlength = prompt('Enter max legth');
+	alert(splitString(str, maxlength));
 
 //Task4
 function getRandom(min, max){
