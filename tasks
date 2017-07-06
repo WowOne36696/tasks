@@ -1,10 +1,14 @@
 //Task1
-function upFirst(str) { 
-  if(!str) return str;
+function ucFirst(str) {
+  if (!str) return str;
+
   return str[0].toUpperCase() + str.slice(1);
-  }
-  alert(ucFirst('petya'));
-  
+}
+var str;
+str = prompt ('Enter the word');
+alert (ucFirst(str));
+
+
 //Task2
 var string = "string",
 	substring = "ring";
@@ -13,8 +17,14 @@ string.includes(substring);
 //Task3
 
 //Task4
-var max = 100;
-	alert(Math.random() * max);
+function getRandom(min, max){
+  var rand = (Math.random() * (max - min)+min);
+  alert(rand);
+}
+var min, max;
+min = prompt('Enter min');
+max = prompt('Enter max');
+getRandom();
 
 //Task5
 function Fibonacci(iterations) {
@@ -26,7 +36,9 @@ function Fibonacci(iterations) {
 		alert((i+1) + ' итерация = ' + summ + ' /');
     }
 }
-Fibonacci(10);
+
+iterations = prompt("How many iterations you wont?")
+Fibonacci(iterations);
 
 //Task 6
 function changeDirection(string) {
