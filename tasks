@@ -1,0 +1,38 @@
+//Task1
+function upFirst(str) { 
+  if(!str) return str;
+  return str[0].toUpperCase() + str.slice(1);
+  }
+  alert(ucFirst('petya'));
+  
+//Task2
+var string = "string",
+	substring = "ring";
+string.includes(substring);
+
+//Task3
+
+//Task4
+var max = 100;
+	alert(Math.random() * max);
+
+//Task5
+function Fibonacci(iterations) {
+	var summ = 0, a = 0, b = 1;
+    for (var i = 0; i < iterations; i++) {
+        summ = a + b;
+		a = b;
+		b = summ;
+		document.write((i+1) + ' итерация = ' + summ + ' /');
+    }
+}
+Fibonacci(100);
+
+//Task 6
+function changeDirection(string) {
+		 return string.split("").reverse().join("");
+	}
+	alert(changeDirection("string"));
+  
+  //Task 7
+  
